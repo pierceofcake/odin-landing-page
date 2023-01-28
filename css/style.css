@@ -17,7 +17,7 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 100px;
-  width: 1200px;
+  width: 1000px;
 }
 
 .hero-container {
@@ -31,12 +31,13 @@ body {
 
 .hero-text-and-image {
   display: flex;
-  width: 1200px;
+  width: 1000px;
 }
 
-.hero-left,
-.hero-right {
-  flex: 1;
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .hero-text-big {
@@ -48,11 +49,15 @@ body {
 .hero-text-small {
   font-size: 18px;
   color: #e5e7eb;
+  margin-right: 10px;
+}
+
+.hero-button {
+  width: 100px;
 }
 
 img {
-  flex: 1;
-  height: 400px;
+  width: 500px;
 }
 
 ul {
@@ -60,6 +65,7 @@ ul {
   color: #e5e7eb;
   display: flex;
   list-style: none;
+  gap: 16px;
 }
 
 button {
@@ -88,12 +94,16 @@ button {
 
 .card-container {
   margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .info-text {
   margin-top: 10px;
   width: 150px;
   height: auto;
+  text-align: center;
 }
 
 .card-title {
@@ -102,9 +112,38 @@ button {
   font-weight: 1000;
   font-size: 36px;
   color: #1f2937;
+  margin-bottom: 16px;
 }
 
 .card-content {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.quote-section {
+  display: flex;
+  flex-direction: column;
+  background-color: #e5e7eb;
+  padding: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote-text {
+  width: 1000px;
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 36px;
+  color: #1f2937;
+}
+
+.quote-author {
+  margin-left: 300px;
+  font-weight: 900;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
 }
